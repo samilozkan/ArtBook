@@ -16,8 +16,16 @@ class SecondVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        //Klavyeyi kapatmak için
+        let gesture = UITapGestureRecognizer(target: self, action: #selector(hideKeyboard))
+        view.addGestureRecognizer(gesture)
 }
     
+    @objc func hideKeyboard(){
+        view.endEditing(true)
+        
+    }
     
     @IBAction func saveButton(_ sender: Any) {
     }
