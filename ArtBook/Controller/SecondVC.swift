@@ -14,14 +14,10 @@ class SecondVC: UIViewController {
     @IBOutlet weak var artistTextField: UITextField!
     @IBOutlet weak var yearTextField: UITextField!
     
-    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
-    }
+}
     
-
     
     @IBAction func saveButton(_ sender: Any) {
     }
